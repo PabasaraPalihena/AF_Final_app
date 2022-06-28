@@ -4,6 +4,9 @@ const Koa = require("koa");
 //app start
 const app = new Koa();
 
+//DB connection
+require("./dal/index");
+
 app.use((ctx) => {
   ctx.body = "Welcome to Koa";
 });
